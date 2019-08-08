@@ -38,6 +38,7 @@ body{
 .inner1{
   border-right: 1px solid #38455f; 
   padding: 20px 40px 80px 25px;
+  height: 100%;
 }
 @media(max-width: 1600px){
   .inner1{
@@ -110,6 +111,14 @@ body{
 
 }
 
+@media(max-width: 1500px){
+  .item-roumb.clock b{
+    font-size: 1.5rem;
+  }
+  .section-contact .item-roumb .phone{
+    white-space: nowrap;
+  }
+}
 @media(max-width: 991px){
   .clock{
     display: none !important;
@@ -787,5 +796,149 @@ only screen and (max-width: 760px),
   .section.last-op .row-balans .col-lg-4{
     margin-bottom: 20px;
     justify-content: center !important;
+  }
+}
+
+.section.tickets .tick{
+  display: flex;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+.section.tickets .tick.question{
+  background: #2b3750;
+  flex-direction: row;
+}
+.section.tickets .tick.answer{
+  background: #38455f;
+  flex-direction: row-reverse;
+}
+.section.tickets .tick.answer .tick-text{
+  text-align: right;
+}
+.section.tickets .tick img{
+  width: 65px;
+  height: 65px;
+}
+.section.tickets .tick.question img{
+  margin-right: 20px;
+}
+.section.tickets .tick.answer img{
+  margin-left: 20px;
+}
+.section.tickets .tick .title{
+  color: #00cca2;
+  font-size: 17px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+
+}
+.section.tickets .tick .date{
+  color: #838a97;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 15px;
+}
+.section.tickets .tick p{
+  color: #fff;
+  font-size: 15px;
+}
+.pagination{
+  margin-bottom: 0;
+  justify-content: center;
+  margin-top: 50px;
+}
+.pagination .page-link{
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #2b3750;
+  border: none;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  margin: 0 5px;
+}
+.pagination .page-link.active{
+  border: 1px solid #016ddd;
+  color: #016ddd !important;
+  background: #2b3750 !important;
+}
+.pagination .page-item:first-child .page-link{
+  border-radius: 50%;
+  margin-right: 30px;
+  border: 1px solid #02bea1;
+  background: url(img/pag-left.png) no-repeat center center;
+
+}
+.pagination .page-item:last-child .page-link{
+  border-radius: 50%;
+  margin-left: 30px;
+  background: url(img/pag-right.png) no-repeat center center;
+  border: 1px solid #02bea1;
+}
+
+@media(max-width: 1139px){
+  .pagination .page-link{
+    width: 40px;
+    line-height: 29px;
+    height: 40px;
+  }
+  .pagination .page-item:first-child .page-link{
+    margin-right: 5px;
+  }
+  .pagination .page-item:last-child .page-link{
+    margin-left: 5px;
+  }
+}
+
+@media(max-width: 767px){
+  .pagination li{
+    display: none;
+  }
+  .pagination li:first-child,
+  .pagination li:last-child{
+    display: block;
+  }
+  .section.tickets img{
+    display: none;
+  }
+}
+
+
+.section.tickets .form-border{
+  border: 1px solid #38455f;
+  padding: 35px;
+  color: #fff;
+}
+.section.tickets .form-border img{
+  height: 60px;
+  width: 60px;
+  margin-right: 25px;
+} 
+.section.tickets .form-border h2{
+  margin-bottom: 0;
+}
+.section.tickets .title-form{
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+} 
+.section.tickets .form-group{
+  margin-bottom: 25px;
+}
+.section.tickets textarea{
+  margin-bottom: 45px;
+}
+.section.tickets .btn-green{
+  width: auto;
+  margin: 0 auto;
+  display: block;
+  padding: 0 50px;
+}
+@media(max-width: 991px){
+  .section.tickets .form-border{
+    margin-top: 30px;
   }
 }
