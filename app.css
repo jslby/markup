@@ -8,28 +8,28 @@ body{
   background-color: #212c43;
   font-family: Gilroy;
 }
-@media(max-width: 1880px){
+/*@media(max-width: 1880px){
   html{
     font-size: 14px;
   }
 }
-
-@media(max-width: 1690px){
+*/
+/*@media(max-width: 1690px){
   html{
     font-size: 13px;
   }
-}
+}*/
 
-@media(max-width: 1400px){
+/*@media(max-width: 1400px){
   html{
     font-size: 12px;
   }
-}
-@media(max-width: 1200px){
+}*/
+/*@media(max-width: 1200px){
   html{
     font-size: 11px;
   }
-}
+}*/
 
 .container-fluid{
   padding: 0;
@@ -47,15 +47,19 @@ body{
 }
 .inner2{
   border-right: 1px solid #38455f; 
-  margin-right: 60px;
+  margin-right: 46px;
+}
+.navbar-toggler{
+  position: relative;
+  right: -5px;
 }
 
-@media(max-width: 1600px){
+/*@media(max-width: 1600px){
   .inner2{
     margin-right: 0px;
     border: none;
   }
-}
+}*/
 
 .inner1 .copyright{
   position: absolute;
@@ -112,9 +116,9 @@ body{
 }
 
 @media(max-width: 1500px){
-  .item-roumb.clock b{
+  /*.item-roumb.clock b{
     font-size: 1.5rem;
-  }
+  }*/
   .section-contact .item-roumb .phone{
     white-space: nowrap;
   }
@@ -200,9 +204,10 @@ body{
   text-transform: lowercase;
   font-weight: 300;
   text-decoration: underline;
-      white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  /*white-space: nowrap;*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
 }
 .item-roumb a:hover{
   color: #00cca2 ;
@@ -411,6 +416,7 @@ nav .clock{
   font-weight: bold;
   padding: 20px 0;
   text-align: center;
+  height: 100%;
 }
 .section-account-buttons .col-md-4:nth-child(1) a{
   color: #00cca2;
@@ -454,10 +460,20 @@ nav .clock{
   height: 100%;
   align-items: center;
 }
-@media(max-width: 767px){
+@media(max-width: 1250px){
+  .section{
+    padding: 15px;
+  }
+  .img-bg{
+    padding: 15px !important;
+  }
+  .img-border .labels span{
+    width: auto !important;
+  }
   .img-border{
     display: block;
     text-align: center;
+    padding: 15px;
   }
   .img-border img{
     margin-right: 0 !important;
@@ -937,8 +953,30 @@ only screen and (max-width: 760px),
   display: block;
   padding: 0 50px;
 }
+@media(max-width: 415px){
+  .section.tickets .btn-green{
+    width: 100%;
+    padding: 0;
+  }
+}
 @media(max-width: 991px){
   .section.tickets .form-border{
     margin-top: 30px;
+  }
+  .inner2{
+  border-left: 1px solid #38455f;
+  margin-left: 46px;
+  }
+}
+
+@media(min-width:1198px) and (max-width: 1310px){
+  .lang a{
+    padding: 5px;
+  }
+  .navbar-brand{
+    font-size: 1.3rem;
+  }
+  .item-roumb b{
+    font-size: 1.4rem;
   }
 }
