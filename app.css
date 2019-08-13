@@ -987,4 +987,10 @@ only screen and (max-width: 760px),
   .section-account-buttons .col-md-4:nth-child(2) a{
         border-top: 1px solid #3294ee;
   }
+  .section table td{
+    display: flex !important;
+  }
+  .section table td img{
+    margin-left: auto;
+  }
 }
