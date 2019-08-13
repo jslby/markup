@@ -994,3 +994,23 @@ only screen and (max-width: 760px),
     margin-left: auto;
   }
 }
+@media(max-width: 500px){
+  .section table td{
+    padding-left: 10px !important;
+    padding-top: 40px;
+    text-align: center;
+  }
+  .section table td img{
+    margin-right: auto;
+    
+  }
+  
+  .section td:before{
+    width: 100% !important;
+  }
+  td .row-balans span{
+    margin-right: 0;
+    width: 100%;
+  }
+    
+}
