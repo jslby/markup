@@ -980,3 +980,11 @@ only screen and (max-width: 760px),
     font-size: 1.4rem;
   }
 }
+@media(max-width: 765px){
+  .section-account-buttons .col-md-4:nth-child(1) a{
+      border-right: 1px solid #00cca2;
+  }
+  .section-account-buttons .col-md-4:nth-child(2) a{
+        border-top: 1px solid #3294ee;
+  }
+}
